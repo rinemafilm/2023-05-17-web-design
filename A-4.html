@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유진건설</title>
+    <link rel="stylesheet" href="./css/a-4.css">
+    <script src="./script/jquery-1.12.4.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1><a href="#"><img src="./images/A-4/logo.png" alt="유진건설 로고"></a></h1>
+            <ul class="gnb">
+                <li><a href="#">회사소개</a>
+                    <ul>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">조직구성도</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">사업영역</a>
+                    <ul>
+                        <li><a href="#">전원주택</a></li>
+                        <li><a href="#">도시재생</a></li>
+                        <li><a href="#">인테리어</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">입주정보</a>
+                    <ul>
+                        <li><a href="#">입주단지</a></li>
+                        <li><a href="#">입주캘린더</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">건축상담</a></li>
+                        <li><a href="#">홍보자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="slider">
+            <div class="slide">
+                <a href="#"><img src="./images/A-4/slide1 (1).png" alt="슬라이드1"></a>
+                <a href="#"><img src="./images/A-4/slide2.png" alt="슬라이드2"></a>
+                <a href="#"><img src="./images/A-4/slide3.png" alt="슬라이드3"></a>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="notice">
+                <ul class="title">
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+                <ul class="noti">
+                    <li><a href="#">2021년 2월 무이자 할부 카드 안내 2021년 2월 무이자 할부 카드 안내</a><span>2023-05-17</span></a></li>
+                    <li><a href="#">쿠폰 사용 안내 2021년 2월 무이자 할부 카드 안내</a><span>2023-05-15</span></a></li>
+                    <li><a href="#">쿠폰 다운로드 & 사용 방법</a><span>2023-05-12</span></a></li>
+                    <li><a href="#">모바일 앱 설치하고 10% 할인쿠폰 받자!! 2021년 2월 무이자 할부 카드 안내</a><span>2023-05-10</span></a></li>
+                </ul>
+            </div>
+
+            <div class="gallery">
+                <ul class="title">
+                    <li><a href="#">갤러리</a></li>
+                </ul>
+                <ul class="photo">
+                    <li><a href="#"><img src="./images/A-4/gal1.png" alt="갤러리1"></a></li>
+                    <li><a href="#"><img src="./images/A-4/gal2.png" alt="갤러리2"></a></li>
+                    <li><a href="#"><img src="./images/A-4/gal3.png" alt="갤러리3"></a></li>
+                </ul>
+            </div>
+
+            <div class="link"></div>
+        </div>
+
+        <div class="footer">
+            <div class="f_menu">
+                <ul class="menu">
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                <p>copyright All rights reserved 유진건설</p>
+            </div>
+            <div class="f_fam">
+                <select class="family">
+                    <option id="fam1">유진인테리어</option>
+                    <option id="fam2">유진건설배구단</option>
+                    <option id="fam3">유진건설기술교육원</option>
+                    <option id="fam4">유진건설 사회공헌</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="popup">
+    </div>
+
+    <script>
+    $('.gnb').hover(
+         function(){
+            $('.gnb ul').stop().slideDown()
+            $('.gnb').addClass('active')
+        },
+       function(){
+            $('.gnb ul').stop().slideUp()
+            $('.gnb').removeClass('active')
+        }
+    )
+
+    </script>
+</body>
+</html>
